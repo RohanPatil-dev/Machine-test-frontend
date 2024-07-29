@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-nav{
+   position: absolute;
+   left: 69rem;
+}
+
+.navbar-nav li{
+    font-size: 20px;
+}
+
+.navbar-nav li{
+    margin-left: 20px;
+}
+

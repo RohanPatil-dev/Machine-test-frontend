@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    background: linear-gradient(45deg, #553c9a, #ee4b2b,rgb(0, 68, 128)); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#employee {
+    position: relative;
+    left: 150px;
+    top: 80px;
+    border: 2px solid rgb(217, 200, 200);
+    border-radius: 20px;
+    padding: 30px;
+    width: 75rem;
+    height: 500px;
+}
+
+.emp-gridy {
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.form-group input,
+.form-group select {
+    position: relative;
+    width: 500px;
+}
+
+.radio,
+.courses {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.radio input:last-child {
+    margin-left: 40px;
+}
+
+.radio input[type=radio] {
+    position: relative;
+    top: 3px;
+    padding: 20px;
+    margin-left: 40px;
+    accent-color: blue;
+    height: 18px;
+    width: 18px;
+}
+
+.courses input[type=checkbox] {
+    margin-left: 30px;
+    accent-color: blue;
+    height: 18px;
+    width: 18px;
+    position: relative;
+    top: 3px;
+}
+
+
+.user-img {
+    position: relative;
+    top: 60px;
+    left: 370px;
+}
+
+.user-img label{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.user-img input[type=file]{
+     border: 2px solid #553c9a;
+     width: 300px;
+     padding: 10px;
+     color: rgb(170, 32, 216);
+     border-radius: 20px;
+}
+
+.emp-create-btn {
+    margin-top: 140px;
+    margin-left: 27rem;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.emp-create-btn:hover {
+    background-color: black;
+}
+
+/* dataTable */
+
+.dataTable {
+    margin-top: 50px;
+}
+
+.btn-allData {
+    float: right;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Error */
+
+.Error {
+    background: url("/public/Images/signin_and_signup/404-error-page-templates.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.Error a {
+    position: relative;
+    top: 32rem;
+    left: 39rem;
+    width: 200px;
+    padding: 10px;
+}
