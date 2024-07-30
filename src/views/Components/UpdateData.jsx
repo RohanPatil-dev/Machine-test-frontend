@@ -21,15 +21,11 @@ export default function UpdateData() {
     const [course, setCourses] = useState("");
     const [coverImage, setCoverImage] = useState("")
     const [tempImage, setTempImage] = useState(null)
-    console.log(coverImage);
-
-    async function exchange(){
-        return await setCoverImage(tempImage)
-    }
+    console.log("cover",coverImage);
+    console.log("temp",tempImage);
 
     useEffect(() => {
         singleData()
-        exchange()
       }, [id])
 
    async function singleData(){
@@ -58,7 +54,7 @@ export default function UpdateData() {
    async function updateData(event){
     event.preventDefault()
     try {
-        const response = await employeeController.updateEmp(id,name, email, contact, designation, gender, course, coverImage)
+        const response = await employeeController.updateEmp(id,name, email, contact, designation, gender, course, tempImage)
   
          toast.success(response.msg)
       } catch (error) {
@@ -108,9 +104,10 @@ export default function UpdateData() {
                             <input type="checkbox" checked={course === "BSC"}value={"BSC"} onChange={(event)=>{return setCourses(event.target.value)}} /> BSC
                         </div>
 
-                        <div className="form-group user-img">
+                        <div className="form-group update-img">
                             <label htmlFor="exampleFormControlFile1">Upload Image</label>
-                            <input type="file" onChange={(event)=>{return setTempImage(event.target.files[0])}} className="form-control-file" id="exampleFormControlFile1" />
+                            <input type="file" name="coverImage" onChange={(event)=>{return setTempImage(event.target.files[0]);}} className="form-control-file" id="exampleFormControlFile1" />
+                            <p className="img-name">{coverImage.slice(15,46)}.....</p>
                         </div>
                     </div>
                     <button type="submit" className="btn btn-primary emp-create-btn">Submit</button>

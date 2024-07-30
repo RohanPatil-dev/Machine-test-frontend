@@ -30,9 +30,11 @@ const empService = {
   },
   updateEmp: async (id,emp) => {
     try {
+      console.log("rest",id,emp);
       const response = await axios.put(`http://localhost:8081/employee/emp-update/${id}`,emp, {
         headers: {
-          Authorization: `Bearer ${token}`
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "multipart/form-data"
         }
       });
       return response.data;

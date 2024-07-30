@@ -148,7 +148,7 @@ export default function Datatable(props) {
             key: "coverImage",
             dataIndex: "coverImage",
             ...getColumnSearchProps('coverImage'),
-            render: (_, record) => (<img src={`http://localhost:8081/uploads/${record.coverImage}`} alt="Image doesn't exist" height="70px" />),
+            render: (_, record) => (<img src={`http://localhost:8081/uploads/${record.coverImage}`} alt="Image doesn't exist" height="70px" width="130px" />),
             width: '0.8%',
             align: "center",
 
