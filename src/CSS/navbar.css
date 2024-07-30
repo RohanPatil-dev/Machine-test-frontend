@@ -17,3 +17,11 @@
     margin-left: 20px;
 }
 
+#footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border: 2px solid gray;
+    padding: 5px;
+    text-align: center;
+}

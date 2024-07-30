@@ -1,5 +1,6 @@
 import React from "react"
 
+import Footer from "../Header & Footer/Footer";
 import "../../CSS/homepage.css"
 import { Link } from "react-router-dom"
 
@@ -21,6 +22,7 @@ export default function Homepage() {
           <Link to="/createEmployee" className="btn btn-color">Get Started</Link>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

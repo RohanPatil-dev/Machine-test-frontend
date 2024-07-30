@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 
 import employeeController from "../../controller/employee"
+import Footer from "../Header & Footer/Footer";
 
 export default function UpdateData() {
 
@@ -114,8 +115,9 @@ export default function UpdateData() {
                     </div>
                     <button type="submit" className="btn btn-primary emp-create-btn">Submit</button>
                 </form>
-
             </div>
+
+            <Footer/>
         </>
     )
 }

@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from "react-router-dom";
 
 import "../../CSS/employee.css"
+import Footer from "../Header & Footer/Footer";
 
 export default function Employee() {
     const [name, setName] = useState("");
@@ -85,6 +86,8 @@ export default function Employee() {
                 </form>
 
             </div>
+
+            <Footer />
         </>
     )
 }

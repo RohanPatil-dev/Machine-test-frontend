@@ -1,5 +1,7 @@
 import React,{useState,useEffect} from "react"
 
+import Footer from "../Header & Footer/Footer";
+
 import employeeController from "../../controller/employee"
 
 import { ToastContainer, toast } from "react-toastify"
@@ -55,6 +57,7 @@ export default function Employee_list() {
      <>
      <ToastContainer />
      <Datatable emp={emp} deleteEmployee={deleteEmployee}/>
+     <Footer />
      </>
   )
 }
